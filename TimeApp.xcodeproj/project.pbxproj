@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		9263EDAA24B9BAFB00934940 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9263EDA924B9BAFB00934940 /* Assets.xcassets */; };
 		9263EDAD24B9BAFB00934940 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9263EDAC24B9BAFB00934940 /* Preview Assets.xcassets */; };
 		9263EDB024B9BAFB00934940 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9263EDAE24B9BAFB00934940 /* LaunchScreen.storyboard */; };
+		9263EDB924B9BBBD00934940 /* BottomBar-SwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9263EDB824B9BBBD00934940 /* BottomBar-SwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9263EDB924B9BBBD00934940 /* BottomBar-SwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +96,9 @@
 			dependencies = (
 			);
 			name = TimeApp;
+			packageProductDependencies = (
+				9263EDB824B9BBBD00934940 /* BottomBar-SwiftUI */,
+			);
 			productName = TimeApp;
 			productReference = 9263ED9D24B9BAF900934940 /* TimeApp.app */;
 			productType = "com.apple.product-type.application";
@@ -122,6 +127,9 @@
 				Base,
 			);
 			mainGroup = 9263ED9424B9BAF900934940;
+			packageReferences = (
+				9263EDB724B9BBBD00934940 /* XCRemoteSwiftPackageReference "bottombar-swiftui" */,
+			);
 			productRefGroup = 9263ED9E24B9BAF900934940 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -346,6 +354,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9263EDB724B9BBBD00934940 /* XCRemoteSwiftPackageReference "bottombar-swiftui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/smartvipere75/bottombar-swiftui";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9263EDB824B9BBBD00934940 /* BottomBar-SwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9263EDB724B9BBBD00934940 /* XCRemoteSwiftPackageReference "bottombar-swiftui" */;
+			productName = "BottomBar-SwiftUI";
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		9263EDA424B9BAF900934940 /* TimeApp.xcdatamodeld */ = {
