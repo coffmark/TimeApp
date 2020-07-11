@@ -15,6 +15,16 @@
 		9263EDAD24B9BAFB00934940 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9263EDAC24B9BAFB00934940 /* Preview Assets.xcassets */; };
 		9263EDB024B9BAFB00934940 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9263EDAE24B9BAFB00934940 /* LaunchScreen.storyboard */; };
 		9263EDB924B9BBBD00934940 /* BottomBar-SwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9263EDB824B9BBBD00934940 /* BottomBar-SwiftUI */; };
+		9263EDBC24B9BC2000934940 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDBB24B9BC2000934940 /* HomeView.swift */; };
+		9263EDBE24B9BC2B00934940 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDBD24B9BC2B00934940 /* AddView.swift */; };
+		9263EDC024B9BC3700934940 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDBF24B9BC3700934940 /* ShareView.swift */; };
+		9263EDC224B9BC4300934940 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDC124B9BC4300934940 /* ListView.swift */; };
+		9263EDC724B9C02900934940 /* AddTimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDC624B9C02900934940 /* AddTimeViewModel.swift */; };
+		9263EDC924B9C10000934940 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDC824B9C10000934940 /* CoreDataManager.swift */; };
+		9263EDCB24B9C19C00934940 /* NSManagedObjectContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDCA24B9C19C00934940 /* NSManagedObjectContext+Extensions.swift */; };
+		9263EDCD24B9C46D00934940 /* OrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDCC24B9C46D00934940 /* OrderListViewModel.swift */; };
+		9263EDD024B9C50000934940 /* TimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDCF24B9C50000934940 /* TimeViewModel.swift */; };
+		9263EDD224B9C69600934940 /* AddOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDD124B9C69600934940 /* AddOrderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +37,16 @@
 		9263EDAC24B9BAFB00934940 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9263EDAF24B9BAFB00934940 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9263EDB124B9BAFB00934940 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9263EDBB24B9BC2000934940 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9263EDBD24B9BC2B00934940 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		9263EDBF24B9BC3700934940 /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
+		9263EDC124B9BC4300934940 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		9263EDC624B9C02900934940 /* AddTimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTimeViewModel.swift; sourceTree = "<group>"; };
+		9263EDC824B9C10000934940 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		9263EDCA24B9C19C00934940 /* NSManagedObjectContext+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extensions.swift"; sourceTree = "<group>"; };
+		9263EDCC24B9C46D00934940 /* OrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewModel.swift; sourceTree = "<group>"; };
+		9263EDCF24B9C50000934940 /* TimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeViewModel.swift; sourceTree = "<group>"; };
+		9263EDD124B9C69600934940 /* AddOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +80,14 @@
 		9263ED9F24B9BAF900934940 /* TimeApp */ = {
 			isa = PBXGroup;
 			children = (
+				9263EDCE24B9C4EA00934940 /* Models */,
+				9263EDC524B9C01100934940 /* Extensions */,
+				9263EDC424B9BFFA00934940 /* Managers */,
+				9263EDC324B9BFEE00934940 /* ViewModels */,
+				9263EDBA24B9BC0F00934940 /* View */,
+				9263EDA724B9BAF900934940 /* ContentView.swift */,
 				9263EDA024B9BAF900934940 /* AppDelegate.swift */,
 				9263EDA224B9BAF900934940 /* SceneDelegate.swift */,
-				9263EDA724B9BAF900934940 /* ContentView.swift */,
 				9263EDA924B9BAFB00934940 /* Assets.xcassets */,
 				9263EDAE24B9BAFB00934940 /* LaunchScreen.storyboard */,
 				9263EDB124B9BAFB00934940 /* Info.plist */,
@@ -78,6 +103,51 @@
 				9263EDAC24B9BAFB00934940 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9263EDBA24B9BC0F00934940 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9263EDBB24B9BC2000934940 /* HomeView.swift */,
+				9263EDBD24B9BC2B00934940 /* AddView.swift */,
+				9263EDBF24B9BC3700934940 /* ShareView.swift */,
+				9263EDC124B9BC4300934940 /* ListView.swift */,
+				9263EDD124B9C69600934940 /* AddOrderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9263EDC324B9BFEE00934940 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9263EDC624B9C02900934940 /* AddTimeViewModel.swift */,
+				9263EDCC24B9C46D00934940 /* OrderListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9263EDC424B9BFFA00934940 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				9263EDC824B9C10000934940 /* CoreDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		9263EDC524B9C01100934940 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9263EDCA24B9C19C00934940 /* NSManagedObjectContext+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9263EDCE24B9C4EA00934940 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9263EDCF24B9C50000934940 /* TimeViewModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,10 +227,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9263EDC224B9BC4300934940 /* ListView.swift in Sources */,
 				9263EDA124B9BAF900934940 /* AppDelegate.swift in Sources */,
 				9263EDA624B9BAF900934940 /* TimeApp.xcdatamodeld in Sources */,
+				9263EDCD24B9C46D00934940 /* OrderListViewModel.swift in Sources */,
+				9263EDD024B9C50000934940 /* TimeViewModel.swift in Sources */,
+				9263EDBE24B9BC2B00934940 /* AddView.swift in Sources */,
+				9263EDC024B9BC3700934940 /* ShareView.swift in Sources */,
 				9263EDA824B9BAF900934940 /* ContentView.swift in Sources */,
+				9263EDC724B9C02900934940 /* AddTimeViewModel.swift in Sources */,
+				9263EDBC24B9BC2000934940 /* HomeView.swift in Sources */,
+				9263EDCB24B9C19C00934940 /* NSManagedObjectContext+Extensions.swift in Sources */,
+				9263EDC924B9C10000934940 /* CoreDataManager.swift in Sources */,
 				9263EDA324B9BAF900934940 /* SceneDelegate.swift in Sources */,
+				9263EDD224B9C69600934940 /* AddOrderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
