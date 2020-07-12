@@ -15,6 +15,8 @@ struct AddOrderView: View {
     //@State var addOrderVM = AddOrderViewModel()
     @State var addTimeVM = AddTimeViewModel()
     
+    
+    
     var body: some View {
         
         NavigationView{
@@ -22,6 +24,16 @@ struct AddOrderView: View {
             Group{
                 VStack{
                     TextField("Enter name", text: self.$addTimeVM.name)
+                    
+                    //寝る時間　downtime
+                    DatePicker(selection: self.$addTimeVM.downtime, displayedComponents: .hourAndMinute){
+                        Text("Hour\nMinute")
+                    }.labelsHidden()
+                    
+                    //起きる時間 uptime
+                    DatePicker(selection: self.$addTimeVM.uptime, displayedComponents: .hourAndMinute){
+                        Text("Hour\nMinute")
+                    }.labelsHidden()
                 
                     
                     Button("Place Order"){

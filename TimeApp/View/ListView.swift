@@ -24,6 +24,18 @@ struct ListView: View {
         }
     }
     
+    //dateformatter
+    @Environment(\.timeZone) var timeZone
+    
+    var dateFormat: DateFormatter{
+        let dformat = DateFormatter()
+        dformat.dateStyle = .medium
+        dformat.timeStyle = .medium
+        dformat.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        dformat.timeZone = timeZone
+        return dformat
+    }
+    
     
     
     var body: some View{
@@ -34,6 +46,15 @@ struct ListView: View {
                         Text(time.name)
                             .font(.largeTitle)
                             .padding([.leading], 10)
+                        Text("\(time.downtime, formatter: self.dateFormat)")
+                        .font(.caption)
+                        .padding([.leading], 10)
+
+                        Text("\(time.uptime, formatter: self.dateFormat)")
+                            .font(.caption)
+                        .padding([.leading], 10)
+                        
+                        
                     }
                 }.onDelete(perform: delete)
             }

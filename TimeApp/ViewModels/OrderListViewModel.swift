@@ -33,9 +33,13 @@ class TimeListViewModel: ObservableObject{
 
 class TimeViewModel{
     var name :String = ""
+    var downtime: Date
+    var uptime: Date
     
     init(time: Time) {
         self.name = time.name!
+        self.downtime = time.downtime!
+        self.uptime = time.uptime!
     }
 }
 

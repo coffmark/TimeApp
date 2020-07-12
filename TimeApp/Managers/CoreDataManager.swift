@@ -58,9 +58,11 @@ class CoreDataManager{
         return times
     }
     
-    func saveTime(name: String){
+    func saveTime(name: String, downtime: Date, uptime: Date){
         let time = Time(context: self.moc)
         time.name = name
+        time.downtime = downtime
+        time.uptime = uptime
         
         do{
             try self.moc.save()
