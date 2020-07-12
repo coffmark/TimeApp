@@ -31,10 +31,20 @@ struct ListView: View {
         let dformat = DateFormatter()
         dformat.dateStyle = .medium
         dformat.timeStyle = .medium
-        dformat.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        dformat.dateFormat = "HH:mm:ss"
         dformat.timeZone = timeZone
         return dformat
     }
+    
+    
+    
+    
+    
+//    func calcDate(firstDateStr: Date, secondDateStr: Date? = nil) -> String{
+//
+//        firstDateStr1 =
+//
+//    }
     
     
     
@@ -46,13 +56,23 @@ struct ListView: View {
                         Text(time.name)
                             .font(.largeTitle)
                             .padding([.leading], 10)
-                        Text("\(time.downtime, formatter: self.dateFormat)")
-                        .font(.caption)
-                        .padding([.leading], 10)
-
-                        Text("\(time.uptime, formatter: self.dateFormat)")
-                            .font(.caption)
-                        .padding([.leading], 10)
+                        
+                        //個別にdowntimeとuptimeを表したいときは使えばいいと思う
+//                        Text("\(time.downtime, formatter: self.dateFormat)")
+//                        .font(.caption)
+//                        .padding([.leading], 10)
+//
+//                        Text("\(time.uptime, formatter: self.dateFormat)")
+//                            .font(.caption)
+//                        .padding([.leading], 10)
+                        
+                        HStack {
+                            Spacer()
+                            Text(String(format: "%.1f", time.uptime.timeIntervalSince(time.downtime) / 3600))
+                            Text("h")
+                            Spacer()
+                               
+                        }.padding()
                         
                         
                     }
