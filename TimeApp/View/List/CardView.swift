@@ -10,6 +10,11 @@ import SwiftUI
 
 struct CardView: View {
     
+    
+     var msg: String
+    
+
+    
     var body: some View {
         HStack{
             Text("😁")
@@ -28,8 +33,8 @@ struct CardView: View {
                 
                 
                 
-                Text("一言")
-                    .padding()
+                Text(msg)
+                    
                 
             }.padding([.leading], 50)
             
@@ -43,6 +48,6 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView().previewLayout(.sizeThatFits)
+        CardView(msg: "一言").previewLayout(.sizeThatFits)
     }
 }

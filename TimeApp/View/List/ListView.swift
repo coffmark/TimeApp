@@ -10,6 +10,8 @@ import SwiftUI
 
 struct ListView: View {
     
+   
+    
     @ObservedObject var timeListVM: TimeListViewModel
     @State private var isPresented: Bool = false
     
@@ -44,32 +46,7 @@ struct ListView: View {
             
             List{
                 ForEach(self.timeListVM.times, id: \.name){ time in
-                    HStack{
-                        Text("😁")
-                            .font(.largeTitle)
-                            .background(Color(#colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)))
-                            .cornerRadius(30)
-                        
-                        
-                        Text(time.name)
-                            .font(.title)
-                            .padding([.leading], 10)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        
-                        
-                        
-                        HStack {
-                            Spacer()
-                            Text(String(format: "%.1f", time.uptime.timeIntervalSince(time.downtime) / 3600))
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            Text("h")
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            Spacer()
-                            
-                        }.padding()
-                        
-                        
-                    }
+                    CardView(msg: time.name)
                 }.onDelete(perform: delete)
                     .listRowBackground(Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1))
                         .clipped()
@@ -83,7 +60,7 @@ struct ListView: View {
                     print("ONDISMISS")
                     self.timeListVM.fetchAllTimes()
                 }, content: {
-                    AddOrderView(isPresented: self.$isPresented)
+                    AdditionalView(isPresented: self.$isPresented)
                 })
                 
                 .navigationBarItems(trailing: Button(action: {

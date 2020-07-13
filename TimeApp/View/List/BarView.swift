@@ -10,6 +10,8 @@ import SwiftUI
 
 struct BarView: View {
     
+    
+    
     var value: CGFloat
     
     let sleepAvrg: CGFloat = 8
