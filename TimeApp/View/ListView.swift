@@ -38,16 +38,6 @@ struct ListView: View {
     
     
     
-    
-    
-//    func calcDate(firstDateStr: Date, secondDateStr: Date? = nil) -> String{
-//
-//        firstDateStr1 =
-//
-//    }
-    
-    
-    
     var body: some View{
         NavigationView{
             List{
@@ -57,21 +47,22 @@ struct ListView: View {
                             .font(.largeTitle)
                             .padding([.leading], 10)
                         
+                        
                         //個別にdowntimeとuptimeを表したいときは使えばいいと思う
-//                        Text("\(time.downtime, formatter: self.dateFormat)")
-//                        .font(.caption)
-//                        .padding([.leading], 10)
-//
-//                        Text("\(time.uptime, formatter: self.dateFormat)")
-//                            .font(.caption)
-//                        .padding([.leading], 10)
+                        //                        Text("\(time.downtime, formatter: self.dateFormat)")
+                        //                        .font(.caption)
+                        //                        .padding([.leading], 10)
+                        //
+                        //                        Text("\(time.uptime, formatter: self.dateFormat)")
+                        //                            .font(.caption)
+                        //                        .padding([.leading], 10)
                         
                         HStack {
                             Spacer()
                             Text(String(format: "%.1f", time.uptime.timeIntervalSince(time.downtime) / 3600))
                             Text("h")
                             Spacer()
-                               
+                            
                         }.padding()
                         
                         
@@ -85,8 +76,7 @@ struct ListView: View {
                 AddOrderView(isPresented: self.$isPresented)
             })
                 
-                .navigationBarTitle("Orders")
-                .navigationBarItems(trailing: Button("Add New Order"){
+                .navigationBarItems(trailing: Button("Add"){
                     self.isPresented = true
                 })
         }
