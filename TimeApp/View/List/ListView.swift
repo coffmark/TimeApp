@@ -39,28 +39,31 @@ struct ListView: View {
     
     
     var body: some View{
+        
         NavigationView{
+            
             List{
                 ForEach(self.timeListVM.times, id: \.name){ time in
                     HStack{
-                        Text(time.name)
+                        Text("😁")
                             .font(.largeTitle)
+                            .background(Color(#colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)))
+                            .cornerRadius(30)
+                        
+                        
+                        Text(time.name)
+                            .font(.title)
                             .padding([.leading], 10)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         
                         
-                        //個別にdowntimeとuptimeを表したいときは使えばいいと思う
-                        //                        Text("\(time.downtime, formatter: self.dateFormat)")
-                        //                        .font(.caption)
-                        //                        .padding([.leading], 10)
-                        //
-                        //                        Text("\(time.uptime, formatter: self.dateFormat)")
-                        //                            .font(.caption)
-                        //                        .padding([.leading], 10)
                         
                         HStack {
                             Spacer()
                             Text(String(format: "%.1f", time.uptime.timeIntervalSince(time.downtime) / 3600))
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             Text("h")
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             Spacer()
                             
                         }.padding()
@@ -68,17 +71,30 @@ struct ListView: View {
                         
                     }
                 }.onDelete(perform: delete)
-            }
-            .sheet(isPresented: $isPresented, onDismiss: {
-                print("ONDISMISS")
-                self.timeListVM.fetchAllTimes()
-            }, content: {
-                AddOrderView(isPresented: self.$isPresented)
-            })
+                    .listRowBackground(Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1))
+                        .clipped()
+                        .cornerRadius(10)
+                        .padding([.vertical], 5))
                 
-                .navigationBarItems(trailing: Button("Add"){
-                    self.isPresented = true
+            }.background(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
+                
+                
+                .sheet(isPresented: $isPresented, onDismiss: {
+                    print("ONDISMISS")
+                    self.timeListVM.fetchAllTimes()
+                }, content: {
+                    AddOrderView(isPresented: self.$isPresented)
                 })
+                
+                .navigationBarItems(trailing: Button(action: {
+                    self.isPresented = true
+                }, label: {
+                    Image(systemName: "plus.circle")
+                        
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                        .foregroundColor(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                }))
         }
     }
 }

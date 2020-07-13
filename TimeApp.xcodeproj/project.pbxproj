@@ -27,6 +27,7 @@
 		9263EDD224B9C69600934940 /* AddOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDD124B9C69600934940 /* AddOrderView.swift */; };
 		9263EDF924BAA72200934940 /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDF824BAA72200934940 /* FriendsView.swift */; };
 		9263EDFB24BAB6B700934940 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDFA24BAB6B700934940 /* BarView.swift */; };
+		92A020AA24BC38840010AF03 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A020A924BC38840010AF03 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		9263EDD124B9C69600934940 /* AddOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderView.swift; sourceTree = "<group>"; };
 		9263EDF824BAA72200934940 /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
 		9263EDFA24BAB6B700934940 /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
+		92A020A924BC38840010AF03 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +114,10 @@
 		9263EDBA24B9BC0F00934940 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9263EDFC24BABA1C00934940 /* Graph */,
+				92A020A624BC384A0010AF03 /* List */,
 				9263EDA724B9BAF900934940 /* ContentView.swift */,
 				9263EDBB24B9BC2000934940 /* HomeView.swift */,
 				9263EDBF24B9BC3700934940 /* ShareView.swift */,
-				9263EDC124B9BC4300934940 /* ListView.swift */,
 				9263EDD124B9C69600934940 /* AddOrderView.swift */,
 				9263EDF824BAA72200934940 /* FriendsView.swift */,
 			);
@@ -156,12 +157,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		9263EDFC24BABA1C00934940 /* Graph */ = {
+		92A020A624BC384A0010AF03 /* List */ = {
 			isa = PBXGroup;
 			children = (
+				9263EDC124B9BC4300934940 /* ListView.swift */,
+				92A020A924BC38840010AF03 /* CardView.swift */,
 				9263EDFA24BAB6B700934940 /* BarView.swift */,
 			);
-			path = Graph;
+			path = List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +259,7 @@
 				9263EDCB24B9C19C00934940 /* NSManagedObjectContext+Extensions.swift in Sources */,
 				9263EDC924B9C10000934940 /* CoreDataManager.swift in Sources */,
 				9263EDA324B9BAF900934940 /* SceneDelegate.swift in Sources */,
+				92A020AA24BC38840010AF03 /* CardView.swift in Sources */,
 				9263EDD224B9C69600934940 /* AddOrderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

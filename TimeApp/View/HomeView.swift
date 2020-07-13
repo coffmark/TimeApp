@@ -12,7 +12,7 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @State private var dataPoints: [CGFloat] = [50, 100, 150, 100, 40, 10, 20]
+    @State private var dataPoints: [CGFloat] = [7.6, 8, 6.4, 10, 8.2, 9.1, 8.6]
         
     
     @ObservedObject var timeListVM: TimeListViewModel
