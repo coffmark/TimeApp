@@ -26,7 +26,7 @@ struct AdditionalView: View {
             VStack{
                 
                 HStack{
-                    Text("memo")
+                    Text("kamimura")
                     TextField("Enter name", text: self.$addTimeVM.name)
                     
                 }.padding([.leading], 100)
