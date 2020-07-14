@@ -12,7 +12,7 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @State private var dataPoints: [CGFloat] = [7.6, 8, 6.4, 10, 8.2, 9.1, 8.6]
+    @State private var dataPoints: [CGFloat] = [7.6]
         
     
     @ObservedObject var timeListVM: TimeListViewModel
@@ -60,13 +60,8 @@ struct HomeView: View {
                 
                 HStack(spacing: 16){
                     
-                    BarView(value: dataPoints[0])
-                    BarView(value: dataPoints[1])
-                    BarView(value: dataPoints[2])
-                    BarView(value: dataPoints[3])
-                    BarView(value: dataPoints[4])
-                    BarView(value: dataPoints[5])
-                    BarView(value: dataPoints[6])
+                    BarView(t: dataPoints[0])
+                    
                     
                 }.padding(.top, 24)
                     .animation(.default)

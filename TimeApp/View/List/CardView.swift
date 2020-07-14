@@ -11,30 +11,61 @@ import SwiftUI
 struct CardView: View {
     
     
-     var msg: String
+    var name: String
+    var sleepTime: Date
+    var getupTime: Date
     
-
+    //dateformatter
+    @Environment(\.timeZone) var timeZone
+    
+    var dateFormat: DateFormatter{
+        let dformat = DateFormatter()
+        dformat.dateStyle = .medium
+        dformat.timeStyle = .medium
+        dformat.dateFormat = "HH:mm:ss"
+        dformat.timeZone = timeZone
+        return dformat
+    }
+    
+    
     
     var body: some View {
         HStack{
             Text("😁")
                 .font(.largeTitle)
-                .background(Color(#colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)))
+                .background(Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
                 .cornerRadius(30)
                 .padding([.leading], 10)
             
             VStack (alignment: .leading){
                 Text("7/13")
-
-          
+                HStack {
                     
-                BarView(value: 8.5)
-              
-                
-                
-                
-                Text(msg)
                     
+                    
+                    
+                    VStack {
+                        Text("\(sleepTime, formatter: self.dateFormat)")
+                            .font(.title)
+                            .padding([.leading], 10)
+                        
+                        
+                        Text("\(getupTime, formatter: self.dateFormat)")
+                            .font(.title)
+                            .padding([.leading], 10)
+                    }
+                    
+                }
+                
+                Text("\(String(format: "%.1f", getupTime.timeIntervalSince(sleepTime) / 3600))h")
+                    .padding([.leading], -25)
+                
+                BarView(t: CGFloat(getupTime.timeIntervalSince(sleepTime) / 3600))
+                
+                
+                Text(name)
+        
+                
                 
             }.padding([.leading], 50)
             
@@ -48,6 +79,6 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView(msg: "一言").previewLayout(.sizeThatFits)
+        CardView(name: "一言", sleepTime: Date(), getupTime: Date(timeIntervalSinceNow: 18000)).previewLayout(.sizeThatFits)
     }
 }

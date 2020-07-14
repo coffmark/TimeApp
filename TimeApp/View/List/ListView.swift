@@ -26,17 +26,17 @@ struct ListView: View {
         }
     }
     
-    //dateformatter
-    @Environment(\.timeZone) var timeZone
-    
-    var dateFormat: DateFormatter{
-        let dformat = DateFormatter()
-        dformat.dateStyle = .medium
-        dformat.timeStyle = .medium
-        dformat.dateFormat = "HH:mm:ss"
-        dformat.timeZone = timeZone
-        return dformat
-    }
+//    //dateformatter
+//    @Environment(\.timeZone) var timeZone
+//
+//    var dateFormat: DateFormatter{
+//        let dformat = DateFormatter()
+//        dformat.dateStyle = .medium
+//        dformat.timeStyle = .medium
+//        dformat.dateFormat = "HH:mm:ss"
+//        dformat.timeZone = timeZone
+//        return dformat
+//    }
     
     
     
@@ -46,14 +46,14 @@ struct ListView: View {
             
             List{
                 ForEach(self.timeListVM.times, id: \.name){ time in
-                    CardView(msg: time.name)
+                    CardView(name: time.name, sleepTime: time.downtime, getupTime: time.uptime)
                 }.onDelete(perform: delete)
                     .listRowBackground(Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1))
                         .clipped()
                         .cornerRadius(10)
                         .padding([.vertical], 5))
                 
-            }.background(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
+            }.background(Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
                 
                 
                 .sheet(isPresented: $isPresented, onDismiss: {

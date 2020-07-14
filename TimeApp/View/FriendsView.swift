@@ -12,8 +12,8 @@ struct FriendsView: View {
     var body: some View {
         VStack{
             
-            Text("kamimura")
-            Text("kamimuraryosuke")
+            Text("友達とつながれるように実装中です")
+
         }
     }
 }

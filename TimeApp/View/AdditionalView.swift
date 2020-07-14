@@ -10,6 +10,7 @@ import SwiftUI
 
 struct AdditionalView: View {
     
+    @State private var stampList: [String] = ["😁", "😱"]
     
     @Binding var isPresented: Bool
     @State var addTimeVM = AddTimeViewModel()
@@ -25,11 +26,42 @@ struct AdditionalView: View {
             
             VStack{
                 
+                
+                
+//                HStack {
+//                    Text("Feelings")
+//                        .padding([.trailing], 20)
+//                    HStack{
+//
+//                        ForEach(self.stampList, id: \.self){ stamp in
+//
+//                            Button(action: {
+//
+//
+//                            }) {
+//                                Text(stamp)
+//                                    .font(.title)
+//                                    .padding()
+//                                    .background(Color(#colorLiteral(red: 0.2940887213, green: 0.2941361666, blue: 0.2940783501, alpha: 1)))
+//                                .cornerRadius(50)
+//
+//                            }
+//                        }
+//                    }
+//                }
+                
                 HStack{
-                    Text("kamimura")
+                    Text("memo")
+                    .foregroundColor(Color(#colorLiteral(red: 0.2940887213, green: 0.2941361666, blue: 0.2940783501, alpha: 1)))
+                        .padding([.trailing], 50)
                     TextField("Enter name", text: self.$addTimeVM.name)
                     
                 }.padding([.leading], 100)
+                
+                
+                
+                
+                
                 
                 VStack {
                     
@@ -71,6 +103,7 @@ struct AdditionalView: View {
                         .padding(.vertical)
                     
                 }
+                
                 
                 
                 
