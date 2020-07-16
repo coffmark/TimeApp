@@ -26,17 +26,6 @@ struct ListView: View {
         }
     }
     
-//    //dateformatter
-//    @Environment(\.timeZone) var timeZone
-//
-//    var dateFormat: DateFormatter{
-//        let dformat = DateFormatter()
-//        dformat.dateStyle = .medium
-//        dformat.timeStyle = .medium
-//        dformat.dateFormat = "HH:mm:ss"
-//        dformat.timeZone = timeZone
-//        return dformat
-//    }
     
     
     
