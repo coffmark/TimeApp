@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E163A967292173A9E2ECB70 /* Pods_TimeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0645E6FF44DF0765797AF29 /* Pods_TimeApp.framework */; };
 		921F153F24BD19DB001ED296 /* AdditionalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921F153E24BD19DB001ED296 /* AdditionalView.swift */; };
+		922A187224C26AEC00D542B3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 922A187124C26AEC00D542B3 /* GoogleService-Info.plist */; };
 		9263EDA124B9BAF900934940 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDA024B9BAF900934940 /* AppDelegate.swift */; };
 		9263EDA324B9BAF900934940 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDA224B9BAF900934940 /* SceneDelegate.swift */; };
 		9263EDA624B9BAF900934940 /* TimeApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDA424B9BAF900934940 /* TimeApp.xcdatamodeld */; };
@@ -15,7 +17,7 @@
 		9263EDAA24B9BAFB00934940 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9263EDA924B9BAFB00934940 /* Assets.xcassets */; };
 		9263EDAD24B9BAFB00934940 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9263EDAC24B9BAFB00934940 /* Preview Assets.xcassets */; };
 		9263EDB024B9BAFB00934940 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9263EDAE24B9BAFB00934940 /* LaunchScreen.storyboard */; };
-		9263EDB924B9BBBD00934940 /* BottomBar-SwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9263EDB824B9BBBD00934940 /* BottomBar-SwiftUI */; };
+		9263EDB924B9BBBD00934940 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 9263EDB824B9BBBD00934940 /* SwiftPackageProductDependency */; };
 		9263EDBC24B9BC2000934940 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDBB24B9BC2000934940 /* HomeView.swift */; };
 		9263EDBE24B9BC2B00934940 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDBD24B9BC2B00934940 /* AddView.swift */; };
 		9263EDC024B9BC3700934940 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDBF24B9BC3700934940 /* ShareView.swift */; };
@@ -31,7 +33,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5CFD915496B80078A8F64643 /* Pods-TimeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeApp.release.xcconfig"; path = "Target Support Files/Pods-TimeApp/Pods-TimeApp.release.xcconfig"; sourceTree = "<group>"; };
 		921F153E24BD19DB001ED296 /* AdditionalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalView.swift; sourceTree = "<group>"; };
+		922A187124C26AEC00D542B3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9263ED9D24B9BAF900934940 /* TimeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9263EDA024B9BAF900934940 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9263EDA224B9BAF900934940 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 		9263EDF824BAA72200934940 /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
 		9263EDFA24BAB6B700934940 /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
 		92A020A924BC38840010AF03 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		B0645E6FF44DF0765797AF29 /* Pods_TimeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4406D8AB5CFA67E94CB23E0 /* Pods-TimeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeApp.debug.xcconfig"; path = "Target Support Files/Pods-TimeApp/Pods-TimeApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,18 +66,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9263EDB924B9BBBD00934940 /* BottomBar-SwiftUI in Frameworks */,
+				9263EDB924B9BBBD00934940 /* BuildFile in Frameworks */,
+				8E163A967292173A9E2ECB70 /* Pods_TimeApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8517726C806F51B73D280E5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0645E6FF44DF0765797AF29 /* Pods_TimeApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9263ED9424B9BAF900934940 = {
 			isa = PBXGroup;
 			children = (
 				9263ED9F24B9BAF900934940 /* TimeApp */,
 				9263ED9E24B9BAF900934940 /* Products */,
+				D68D289439DEE7C7AA6C2B5D /* Pods */,
+				8517726C806F51B73D280E5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +114,7 @@
 				9263EDAE24B9BAFB00934940 /* LaunchScreen.storyboard */,
 				9263EDB124B9BAFB00934940 /* Info.plist */,
 				9263EDA424B9BAF900934940 /* TimeApp.xcdatamodeld */,
+				922A187124C26AEC00D542B3 /* GoogleService-Info.plist */,
 				9263EDBD24B9BC2B00934940 /* AddView.swift */,
 				9263EDAB24B9BAFB00934940 /* Preview Content */,
 			);
@@ -167,6 +185,16 @@
 			path = List;
 			sourceTree = "<group>";
 		};
+		D68D289439DEE7C7AA6C2B5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4406D8AB5CFA67E94CB23E0 /* Pods-TimeApp.debug.xcconfig */,
+				5CFD915496B80078A8F64643 /* Pods-TimeApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,9 +202,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9263EDB424B9BAFB00934940 /* Build configuration list for PBXNativeTarget "TimeApp" */;
 			buildPhases = (
+				0AB3C87EE124DF11B542D737 /* [CP] Check Pods Manifest.lock */,
 				9263ED9924B9BAF900934940 /* Sources */,
 				9263ED9A24B9BAF900934940 /* Frameworks */,
 				9263ED9B24B9BAF900934940 /* Resources */,
+				1BD126018D2673FE3C309CCF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -184,7 +214,7 @@
 			);
 			name = TimeApp;
 			packageProductDependencies = (
-				9263EDB824B9BBBD00934940 /* BottomBar-SwiftUI */,
+				9263EDB824B9BBBD00934940 /* SwiftPackageProductDependency */,
 			);
 			productName = TimeApp;
 			productReference = 9263ED9D24B9BAF900934940 /* TimeApp.app */;
@@ -215,7 +245,7 @@
 			);
 			mainGroup = 9263ED9424B9BAF900934940;
 			packageReferences = (
-				9263EDB724B9BBBD00934940 /* XCRemoteSwiftPackageReference "bottombar-swiftui" */,
+				9263EDB724B9BBBD00934940 /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = 9263ED9E24B9BAF900934940 /* Products */;
 			projectDirPath = "";
@@ -232,12 +262,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				9263EDB024B9BAFB00934940 /* LaunchScreen.storyboard in Resources */,
+				922A187224C26AEC00D542B3 /* GoogleService-Info.plist in Resources */,
 				9263EDAD24B9BAFB00934940 /* Preview Assets.xcassets in Resources */,
 				9263EDAA24B9BAFB00934940 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AB3C87EE124DF11B542D737 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimeApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1BD126018D2673FE3C309CCF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeApp/Pods-TimeApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeApp/Pods-TimeApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimeApp/Pods-TimeApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9263ED9924B9BAF900934940 /* Sources */ = {
@@ -394,6 +467,7 @@
 		};
 		9263EDB524B9BAFB00934940 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4406D8AB5CFA67E94CB23E0 /* Pods-TimeApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -416,6 +490,7 @@
 		};
 		9263EDB624B9BAFB00934940 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CFD915496B80078A8F64643 /* Pods-TimeApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -460,7 +535,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		9263EDB724B9BBBD00934940 /* XCRemoteSwiftPackageReference "bottombar-swiftui" */ = {
+		9263EDB724B9BBBD00934940 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/smartvipere75/bottombar-swiftui";
 			requirement = {
@@ -471,9 +546,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9263EDB824B9BBBD00934940 /* BottomBar-SwiftUI */ = {
+		9263EDB824B9BBBD00934940 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9263EDB724B9BBBD00934940 /* XCRemoteSwiftPackageReference "bottombar-swiftui" */;
+			package = 9263EDB724B9BBBD00934940 /* RemoteSwiftPackageReference */;
 			productName = "BottomBar-SwiftUI";
 		};
 /* End XCSwiftPackageProductDependency section */
