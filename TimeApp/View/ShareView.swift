@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ShareView: View {
     
-
+    @State private var isShowSheetShowing = false
     
     
     var body: some View {
@@ -64,9 +64,7 @@ struct ShareView: View {
                 }.background(Color.white)
                 .cornerRadius(40)
                 
-                Button(action: {
-                    //TODO: Action
-                }) {
+                Button(action: shareButton) {
                     HStack {
                         Image("instagram")
                             .resizable()
@@ -86,6 +84,16 @@ struct ShareView: View {
             
             
         }.cornerRadius(100)
+        
+        
+    }
+    func shareButton(){
+        isShowSheetShowing.toggle()
+        
+        let url = URL(string: "https://apple.com")
+        let av = UIActivityViewController(activityItems: [url!], applicationActivities: nil)
+        
+        UIApplication.shared.windows.first?.rootViewController?.present(av, animated: true, completion: nil)
     }
 }
 
