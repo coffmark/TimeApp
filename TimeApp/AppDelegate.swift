@@ -18,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        Messaging.messaging().delegate = self
+        setRemoteNotification(application: application)
         return true
     }
 
@@ -82,3 +84,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+
+
+extension  AppDelegate: UNUserNotificationCenterDelegate{
+    func setRemoteNotification(application: UIApplication){
+        //Delegate の設定
+        UNUserNotificationCenter.current().delegate = self
+        //プッシュ通知受信の許可を求める。
+        let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+        UNUserNotificationCenter.current().requestAuthorization(options: authOptions, completionHandler: {_, _ in})
+        application.registerForRemoteNotifications()
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.alert, .sound, .badge])
+    }
+    
+    // プッシュ通知に対しタッチ等のアクションを行った時に呼ばれる。
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        _ = response.notification.request.content.userInfo
+        // 送信時に入れた情報をここで取得。
+    }
+}
+
+
+
+extension AppDelegate: MessagingDelegate {
+    // fcmTokenを受け取った時に呼ばれる。
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
+        if let uid = Auth.auth().currentUser?.uid {  //ログイン中のユーザーIDを取得
+            self.setFcmToken(userId: uid, fcmToken: fcmToken)
+        }
+    }
+    
+    func setFcmToken(userId: String, fcmToken: String) {
+        let reference = Database.database().reference().child("user").child(userId).child("fcm_token")
+        UserDefaults.standard.set(fcmToken, forKey: "fcmToken")
+        reference.setValue(fcmToken)
+    }
+}

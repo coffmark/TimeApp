@@ -17,7 +17,7 @@
 		9263EDAA24B9BAFB00934940 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9263EDA924B9BAFB00934940 /* Assets.xcassets */; };
 		9263EDAD24B9BAFB00934940 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9263EDAC24B9BAFB00934940 /* Preview Assets.xcassets */; };
 		9263EDB024B9BAFB00934940 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9263EDAE24B9BAFB00934940 /* LaunchScreen.storyboard */; };
-		9263EDB924B9BBBD00934940 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 9263EDB824B9BBBD00934940 /* SwiftPackageProductDependency */; };
+		9263EDB924B9BBBD00934940 /* BottomBar-SwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9263EDB824B9BBBD00934940 /* BottomBar-SwiftUI */; };
 		9263EDBC24B9BC2000934940 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDBB24B9BC2000934940 /* HomeView.swift */; };
 		9263EDBE24B9BC2B00934940 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDBD24B9BC2B00934940 /* AddView.swift */; };
 		9263EDC024B9BC3700934940 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDBF24B9BC3700934940 /* ShareView.swift */; };
@@ -29,6 +29,7 @@
 		9263EDD024B9C50000934940 /* TimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDCF24B9C50000934940 /* TimeViewModel.swift */; };
 		9263EDF924BAA72200934940 /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDF824BAA72200934940 /* FriendsView.swift */; };
 		9263EDFB24BAB6B700934940 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDFA24BAB6B700934940 /* BarView.swift */; };
+		929F93C824C4260A00FAB85B /* FirebaseDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929F93C724C4260A00FAB85B /* FirebaseDB.swift */; };
 		92A020AA24BC38840010AF03 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A020A924BC38840010AF03 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,8 @@
 		9263EDCF24B9C50000934940 /* TimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeViewModel.swift; sourceTree = "<group>"; };
 		9263EDF824BAA72200934940 /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
 		9263EDFA24BAB6B700934940 /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
+		9279BD3B24C5334E000C9F09 /* TimeApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimeApp.entitlements; sourceTree = "<group>"; };
+		929F93C724C4260A00FAB85B /* FirebaseDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDB.swift; sourceTree = "<group>"; };
 		92A020A924BC38840010AF03 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		B0645E6FF44DF0765797AF29 /* Pods_TimeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4406D8AB5CFA67E94CB23E0 /* Pods-TimeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeApp.debug.xcconfig"; path = "Target Support Files/Pods-TimeApp/Pods-TimeApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -66,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9263EDB924B9BBBD00934940 /* BuildFile in Frameworks */,
+				9263EDB924B9BBBD00934940 /* BottomBar-SwiftUI in Frameworks */,
 				8E163A967292173A9E2ECB70 /* Pods_TimeApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +106,8 @@
 		9263ED9F24B9BAF900934940 /* TimeApp */ = {
 			isa = PBXGroup;
 			children = (
+				9279BD3B24C5334E000C9F09 /* TimeApp.entitlements */,
+				929F93C424C4258F00FAB85B /* FirebaseDatabase */,
 				9263EDCE24B9C4EA00934940 /* Models */,
 				9263EDC524B9C01100934940 /* Extensions */,
 				9263EDC424B9BFFA00934940 /* Managers */,
@@ -175,6 +180,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		929F93C424C4258F00FAB85B /* FirebaseDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				929F93C724C4260A00FAB85B /* FirebaseDB.swift */,
+			);
+			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
 		92A020A624BC384A0010AF03 /* List */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,7 +204,6 @@
 				B4406D8AB5CFA67E94CB23E0 /* Pods-TimeApp.debug.xcconfig */,
 				5CFD915496B80078A8F64643 /* Pods-TimeApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -214,7 +226,7 @@
 			);
 			name = TimeApp;
 			packageProductDependencies = (
-				9263EDB824B9BBBD00934940 /* SwiftPackageProductDependency */,
+				9263EDB824B9BBBD00934940 /* BottomBar-SwiftUI */,
 			);
 			productName = TimeApp;
 			productReference = 9263ED9D24B9BAF900934940 /* TimeApp.app */;
@@ -245,7 +257,7 @@
 			);
 			mainGroup = 9263ED9424B9BAF900934940;
 			packageReferences = (
-				9263EDB724B9BBBD00934940 /* RemoteSwiftPackageReference */,
+				9263EDB724B9BBBD00934940 /* XCRemoteSwiftPackageReference "bottombar-swiftui" */,
 			);
 			productRefGroup = 9263ED9E24B9BAF900934940 /* Products */;
 			projectDirPath = "";
@@ -329,6 +341,7 @@
 				921F153F24BD19DB001ED296 /* AdditionalView.swift in Sources */,
 				9263EDA824B9BAF900934940 /* ContentView.swift in Sources */,
 				9263EDC724B9C02900934940 /* AddTimeViewModel.swift in Sources */,
+				929F93C824C4260A00FAB85B /* FirebaseDB.swift in Sources */,
 				9263EDBC24B9BC2000934940 /* HomeView.swift in Sources */,
 				9263EDCB24B9C19C00934940 /* NSManagedObjectContext+Extensions.swift in Sources */,
 				9263EDC924B9C10000934940 /* CoreDataManager.swift in Sources */,
@@ -470,6 +483,7 @@
 			baseConfigurationReference = B4406D8AB5CFA67E94CB23E0 /* Pods-TimeApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TimeApp/TimeApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_ASSET_PATHS = "\"TimeApp/Preview Content\"";
@@ -493,6 +507,7 @@
 			baseConfigurationReference = 5CFD915496B80078A8F64643 /* Pods-TimeApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TimeApp/TimeApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_ASSET_PATHS = "\"TimeApp/Preview Content\"";
@@ -535,7 +550,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		9263EDB724B9BBBD00934940 /* RemoteSwiftPackageReference */ = {
+		9263EDB724B9BBBD00934940 /* XCRemoteSwiftPackageReference "bottombar-swiftui" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/smartvipere75/bottombar-swiftui";
 			requirement = {
@@ -546,9 +561,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9263EDB824B9BBBD00934940 /* SwiftPackageProductDependency */ = {
+		9263EDB824B9BBBD00934940 /* BottomBar-SwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9263EDB724B9BBBD00934940 /* RemoteSwiftPackageReference */;
+			package = 9263EDB724B9BBBD00934940 /* XCRemoteSwiftPackageReference "bottombar-swiftui" */;
 			productName = "BottomBar-SwiftUI";
 		};
 /* End XCSwiftPackageProductDependency section */
