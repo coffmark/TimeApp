@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 import Firebase
+import FirebaseUI
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -36,6 +38,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
+    
+    // MARK: - Firebase Auth
+    // Google Facebook Twitter認証の場合関数を書かないといけない
+    
+    //電話番号認証の場合に通知をHandelできるかチェックする関数
+    func application(_ application: UIApplication, didReceiveRemoteNotification notification: [AnyHashable : Any],
+                     fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void){
+        if Auth.auth().canHandleNotification(notification){
+            completionHandler(.noData)
+            return
+        }
+        //エラーの時の処理をかく
+    }
+
+    
+    
+    
+    
+    
+    
+    
 
     // MARK: - Core Data stack
 
@@ -85,6 +108,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 
+
+// MARK: - Firebase Push 通知設定
 
 extension  AppDelegate: UNUserNotificationCenterDelegate{
     func setRemoteNotification(application: UIApplication){
