@@ -29,6 +29,7 @@
 		9263EDD024B9C50000934940 /* TimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDCF24B9C50000934940 /* TimeViewModel.swift */; };
 		9263EDF924BAA72200934940 /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDF824BAA72200934940 /* FriendsView.swift */; };
 		9263EDFB24BAB6B700934940 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDFA24BAB6B700934940 /* BarView.swift */; };
+		9279BD3D24C6634F000C9F09 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9279BD3C24C6634F000C9F09 /* AuthenticationView.swift */; };
 		929F93C824C4260A00FAB85B /* FirebaseDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929F93C724C4260A00FAB85B /* FirebaseDB.swift */; };
 		92A020AA24BC38840010AF03 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A020A924BC38840010AF03 /* CardView.swift */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,7 @@
 		9263EDF824BAA72200934940 /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
 		9263EDFA24BAB6B700934940 /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
 		9279BD3B24C5334E000C9F09 /* TimeApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimeApp.entitlements; sourceTree = "<group>"; };
+		9279BD3C24C6634F000C9F09 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		929F93C724C4260A00FAB85B /* FirebaseDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDB.swift; sourceTree = "<group>"; };
 		92A020A924BC38840010AF03 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		B0645E6FF44DF0765797AF29 /* Pods_TimeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +145,7 @@
 				9263EDBF24B9BC3700934940 /* ShareView.swift */,
 				9263EDF824BAA72200934940 /* FriendsView.swift */,
 				921F153E24BD19DB001ED296 /* AdditionalView.swift */,
+				9279BD3C24C6634F000C9F09 /* AuthenticationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				9263ED9A24B9BAF900934940 /* Frameworks */,
 				9263ED9B24B9BAF900934940 /* Resources */,
 				1BD126018D2673FE3C309CCF /* [CP] Embed Pods Frameworks */,
+				D18CAFD30F1F40399F05D6D4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -322,6 +326,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimeApp/Pods-TimeApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D18CAFD30F1F40399F05D6D4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeApp/Pods-TimeApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeApp/Pods-TimeApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimeApp/Pods-TimeApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -341,6 +362,7 @@
 				921F153F24BD19DB001ED296 /* AdditionalView.swift in Sources */,
 				9263EDA824B9BAF900934940 /* ContentView.swift in Sources */,
 				9263EDC724B9C02900934940 /* AddTimeViewModel.swift in Sources */,
+				9279BD3D24C6634F000C9F09 /* AuthenticationView.swift in Sources */,
 				929F93C824C4260A00FAB85B /* FirebaseDB.swift in Sources */,
 				9263EDBC24B9BC2000934940 /* HomeView.swift in Sources */,
 				9263EDCB24B9C19C00934940 /* NSManagedObjectContext+Extensions.swift in Sources */,

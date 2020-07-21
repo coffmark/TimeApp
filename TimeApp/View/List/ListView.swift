@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ListView: View {
     
-   
+    
     
     @ObservedObject var timeListVM: TimeListViewModel
     @State private var isPresented: Bool = false
@@ -52,16 +52,29 @@ struct ListView: View {
                     AdditionalView(isPresented: self.$isPresented)
                 })
                 
-                .navigationBarItems(trailing: Button(action: {
-                    self.isPresented = true
-                }, label: {
-                    Image(systemName: "plus.circle")
-                        
+                
+                
+                
+                .navigationBarItems(leading: NavigationLink(destination: AuthenticationView()){
+                    Image(systemName: "person.crop.circle")
                         .resizable()
                         .frame(width: 30, height: 30)
                         .foregroundColor(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                }))
-        }.navigationBarTitle("Home")
+                    }
+                    
+                    
+                    
+                    , trailing: Button(action: {
+                        self.isPresented = true
+                    }, label: {
+                        Image(systemName: "plus.circle")
+                            
+                            .resizable()
+                            .frame(width: 30, height: 30)
+                            .foregroundColor(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                    }))
+            
+        }
     }
 }
 
