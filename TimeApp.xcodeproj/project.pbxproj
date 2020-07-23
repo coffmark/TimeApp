@@ -29,12 +29,12 @@
 		9263EDD024B9C50000934940 /* TimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDCF24B9C50000934940 /* TimeViewModel.swift */; };
 		9263EDF924BAA72200934940 /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDF824BAA72200934940 /* FriendsView.swift */; };
 		9263EDFB24BAB6B700934940 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDFA24BAB6B700934940 /* BarView.swift */; };
-		9279BD4124C67452000C9F09 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9279BD4024C67452000C9F09 /* AuthView.swift */; };
 		9279BD4324C6837A000C9F09 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9279BD4224C6837A000C9F09 /* User.swift */; };
 		9279BD4524C68424000C9F09 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9279BD4424C68424000C9F09 /* AuthViewController.swift */; };
-		9279BD4724C792ED000C9F09 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9279BD4624C792ED000C9F09 /* SignInView.swift */; };
 		9279BD4924C79A79000C9F09 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9279BD4824C79A79000C9F09 /* AuthenticationView.swift */; };
+		9279BD4B24C7A9EB000C9F09 /* AfterLogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9279BD4A24C7A9EB000C9F09 /* AfterLogInView.swift */; };
 		92A020AA24BC38840010AF03 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A020A924BC38840010AF03 /* CardView.swift */; };
+		92D51E4424C92963000EC1A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D51E4324C92963000EC1A9 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,12 +62,12 @@
 		9263EDF824BAA72200934940 /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
 		9263EDFA24BAB6B700934940 /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
 		9279BD3B24C5334E000C9F09 /* TimeApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimeApp.entitlements; sourceTree = "<group>"; };
-		9279BD4024C67452000C9F09 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		9279BD4224C6837A000C9F09 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9279BD4424C68424000C9F09 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
-		9279BD4624C792ED000C9F09 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		9279BD4824C79A79000C9F09 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		9279BD4A24C7A9EB000C9F09 /* AfterLogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterLogInView.swift; sourceTree = "<group>"; };
 		92A020A924BC38840010AF03 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		92D51E4324C92963000EC1A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B0645E6FF44DF0765797AF29 /* Pods_TimeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4406D8AB5CFA67E94CB23E0 /* Pods-TimeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeApp.debug.xcconfig"; path = "Target Support Files/Pods-TimeApp/Pods-TimeApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,9 +151,8 @@
 				9263EDBF24B9BC3700934940 /* ShareView.swift */,
 				9263EDF824BAA72200934940 /* FriendsView.swift */,
 				921F153E24BD19DB001ED296 /* AdditionalView.swift */,
-				9279BD4024C67452000C9F09 /* AuthView.swift */,
-				9279BD4624C792ED000C9F09 /* SignInView.swift */,
 				9279BD4824C79A79000C9F09 /* AuthenticationView.swift */,
+				9279BD4A24C7A9EB000C9F09 /* AfterLogInView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -164,6 +163,7 @@
 				9263EDC624B9C02900934940 /* AddTimeViewModel.swift */,
 				9263EDCC24B9C46D00934940 /* OrderListViewModel.swift */,
 				9279BD4424C68424000C9F09 /* AuthViewController.swift */,
+				92D51E4324C92963000EC1A9 /* ViewController.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -363,6 +363,7 @@
 				9263EDC224B9BC4300934940 /* ListView.swift in Sources */,
 				9263EDA124B9BAF900934940 /* AppDelegate.swift in Sources */,
 				9263EDA624B9BAF900934940 /* TimeApp.xcdatamodeld in Sources */,
+				92D51E4424C92963000EC1A9 /* ViewController.swift in Sources */,
 				9263EDCD24B9C46D00934940 /* OrderListViewModel.swift in Sources */,
 				9263EDD024B9C50000934940 /* TimeViewModel.swift in Sources */,
 				9263EDBE24B9BC2B00934940 /* AddView.swift in Sources */,
@@ -370,11 +371,10 @@
 				9279BD4324C6837A000C9F09 /* User.swift in Sources */,
 				9263EDFB24BAB6B700934940 /* BarView.swift in Sources */,
 				921F153F24BD19DB001ED296 /* AdditionalView.swift in Sources */,
+				9279BD4B24C7A9EB000C9F09 /* AfterLogInView.swift in Sources */,
 				9263EDA824B9BAF900934940 /* ContentView.swift in Sources */,
 				9279BD4524C68424000C9F09 /* AuthViewController.swift in Sources */,
 				9263EDC724B9C02900934940 /* AddTimeViewModel.swift in Sources */,
-				9279BD4124C67452000C9F09 /* AuthView.swift in Sources */,
-				9279BD4724C792ED000C9F09 /* SignInView.swift in Sources */,
 				9263EDBC24B9BC2000934940 /* HomeView.swift in Sources */,
 				9263EDCB24B9C19C00934940 /* NSManagedObjectContext+Extensions.swift in Sources */,
 				9279BD4924C79A79000C9F09 /* AuthenticationView.swift in Sources */,
