@@ -34,3 +34,5 @@
 <p align="center">・Firebaseを用いて、リアルタイム同期</p>
 
 
+<p align="right">2020/7/26</p>
+
