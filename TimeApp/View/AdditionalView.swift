@@ -23,36 +23,10 @@ struct AdditionalView: View {
             Color(#colorLiteral(red: 0.6229396462, green: 0.5232685804, blue: 0.9278500676, alpha: 1))
                 .edgesIgnoringSafeArea(.all)
             
-            
             VStack{
-                
-                
-                
-//                HStack {
-//                    Text("Feelings")
-//                        .padding([.trailing], 20)
-//                    HStack{
-//
-//                        ForEach(self.stampList, id: \.self){ stamp in
-//
-//                            Button(action: {
-//
-//
-//                            }) {
-//                                Text(stamp)
-//                                    .font(.title)
-//                                    .padding()
-//                                    .background(Color(#colorLiteral(red: 0.2940887213, green: 0.2941361666, blue: 0.2940783501, alpha: 1)))
-//                                .cornerRadius(50)
-//
-//                            }
-//                        }
-//                    }
-//                }
-                
                 HStack{
                     Text("memo")
-                    .foregroundColor(Color(#colorLiteral(red: 0.2940887213, green: 0.2941361666, blue: 0.2940783501, alpha: 1)))
+                        .foregroundColor(Color(#colorLiteral(red: 0.2940887213, green: 0.2941361666, blue: 0.2940783501, alpha: 1)))
                         .font(.callout)
                         .fontWeight(.bold)
                     TextField("Enter name", text: self.$addTimeVM.name)
@@ -70,11 +44,9 @@ struct AdditionalView: View {
                         Text("Sleep Time")
                             .font(.callout)
                             .fontWeight(.bold)
-                            .padding()
                         Image("sleep")
                             .resizable()
                             .frame(width: 100, height: 100)
-                            .padding()
                     }
                     
                     DatePicker("", selection: self.$addTimeVM.downtime)
