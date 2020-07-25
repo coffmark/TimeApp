@@ -21,6 +21,10 @@ struct AfterLogInView: View {
                     .foregroundColor(Color.black.opacity(0.7))
                 
                 
+                NavigationLink(destination: TutorialHomeVIew()){
+                    Text("Go to the next page.")
+                }
+                
                 
             }
             .navigationBarTitle("")

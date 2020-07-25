@@ -53,7 +53,8 @@ struct AdditionalView: View {
                 HStack{
                     Text("memo")
                     .foregroundColor(Color(#colorLiteral(red: 0.2940887213, green: 0.2941361666, blue: 0.2940783501, alpha: 1)))
-                        .padding([.trailing], 50)
+                        .font(.callout)
+                        .fontWeight(.bold)
                     TextField("Enter name", text: self.$addTimeVM.name)
                     
                 }.padding([.leading], 100)
@@ -140,6 +141,7 @@ struct AdditionalView: View {
     var body: some View {
         
         ZStack{
+            Color(#colorLiteral(red: 0.7392455935, green: 0.7496188283, blue: 0.7361342311, alpha: 1)).edgesIgnoringSafeArea(.all)
             inputform
         }
     }

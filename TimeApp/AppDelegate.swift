@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 import Firebase
 import FirebaseUI
-import FirebaseFirestore
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         
         //MARK: - データベースの初期化
-        let db = Firestore.firestore()
+        //let db = Firestore.firestore()
         
         Messaging.messaging().delegate = self
         setRemoteNotification(application: application)
