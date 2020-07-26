@@ -2,20 +2,30 @@
 
 import Foundation
 import Combine
+import Resolver
 
 class TaskListViewModel: ObservableObject{
+    @Published var taskRepository: TaskRepository = Resolver.resolve()
     @Published var taskCellViewModels = [TaskCellViewModel]()
+    
     
     private var cancellables = Set<AnyCancellable>()
     
     init(){
-        self.taskCellViewModels = testDataTasks.map{task in
-            TaskCellViewModel(task: task)
-        }
+        taskRepository.$tasks.map { tasks in
+            tasks.map{ task in
+                TaskCellViewModel(task: task)
+            }
+        }.assign(to: \.taskCellViewModels, on: self)
+        .store(in: &cancellables)
     }
     
     func removeTasks(atOffsets indexSet: IndexSet) {
-        taskCellViewModels.remove(atOffsets: indexSet)
+        let viewModels = indexSet.lazy.map{ self.taskCellViewModels[$0]}
+        viewModels.forEach{ taskCellViewModels in
+            taskRepository.removeTask(taskCellViewModels.task)
+        }
+        
     }
     
     func addTask(task: Task){
