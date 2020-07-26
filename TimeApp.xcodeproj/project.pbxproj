@@ -28,11 +28,16 @@
 		9263EDCD24B9C46D00934940 /* OrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDCC24B9C46D00934940 /* OrderListViewModel.swift */; };
 		9263EDF924BAA72200934940 /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDF824BAA72200934940 /* FriendsView.swift */; };
 		9263EDFB24BAB6B700934940 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263EDFA24BAB6B700934940 /* BarView.swift */; };
+		9267124C24CD2B3100837645 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9267124B24CD2B3100837645 /* TaskRepository.swift */; };
 		9279BD4324C6837A000C9F09 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9279BD4224C6837A000C9F09 /* User.swift */; };
 		9279BD4524C68424000C9F09 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9279BD4424C68424000C9F09 /* AuthViewController.swift */; };
 		9279BD4924C79A79000C9F09 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9279BD4824C79A79000C9F09 /* AuthenticationView.swift */; };
 		9279BD4B24C7A9EB000C9F09 /* AfterLogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9279BD4A24C7A9EB000C9F09 /* AfterLogInView.swift */; };
 		92A020AA24BC38840010AF03 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A020A924BC38840010AF03 /* CardView.swift */; };
+		92A0C4BC24CD1E9E0034AE1A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A0C4BB24CD1E9E0034AE1A /* Task.swift */; };
+		92A0C4BF24CD1FA20034AE1A /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A0C4BE24CD1FA20034AE1A /* TaskListView.swift */; };
+		92A0C4C224CD23CA0034AE1A /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A0C4C124CD23CA0034AE1A /* TaskListViewModel.swift */; };
+		92A0C4C424CD24F10034AE1A /* TaskCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A0C4C324CD24F10034AE1A /* TaskCellViewModel.swift */; };
 		92D51E4424C92963000EC1A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D51E4324C92963000EC1A9 /* ViewController.swift */; };
 		92D51E4724C9346D000EC1A9 /* TutorialHomeVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D51E4624C9346D000EC1A9 /* TutorialHomeVIew.swift */; };
 /* End PBXBuildFile section */
@@ -60,12 +65,17 @@
 		9263EDCC24B9C46D00934940 /* OrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewModel.swift; sourceTree = "<group>"; };
 		9263EDF824BAA72200934940 /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
 		9263EDFA24BAB6B700934940 /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
+		9267124B24CD2B3100837645 /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
 		9279BD3B24C5334E000C9F09 /* TimeApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimeApp.entitlements; sourceTree = "<group>"; };
 		9279BD4224C6837A000C9F09 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9279BD4424C68424000C9F09 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		9279BD4824C79A79000C9F09 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		9279BD4A24C7A9EB000C9F09 /* AfterLogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterLogInView.swift; sourceTree = "<group>"; };
 		92A020A924BC38840010AF03 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		92A0C4BB24CD1E9E0034AE1A /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		92A0C4BE24CD1FA20034AE1A /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		92A0C4C124CD23CA0034AE1A /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
+		92A0C4C324CD24F10034AE1A /* TaskCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellViewModel.swift; sourceTree = "<group>"; };
 		92D51E4324C92963000EC1A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		92D51E4624C9346D000EC1A9 /* TutorialHomeVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialHomeVIew.swift; sourceTree = "<group>"; };
 		B0645E6FF44DF0765797AF29 /* Pods_TimeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +155,7 @@
 		9263EDBA24B9BC0F00934940 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				92A0C4B724CD1A460034AE1A /* CloudFirestoreTutorial */,
 				92D51E4524C9344B000EC1A9 /* FirestoreTutotialView */,
 				92A020A624BC384A0010AF03 /* List */,
 				9263EDA724B9BAF900934940 /* ContentView.swift */,
@@ -193,6 +204,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		9267124A24CD2B1F00837645 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				9267124B24CD2B3100837645 /* TaskRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		929F93C424C4258F00FAB85B /* FirebaseDatabase */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +227,42 @@
 				9263EDFA24BAB6B700934940 /* BarView.swift */,
 			);
 			path = List;
+			sourceTree = "<group>";
+		};
+		92A0C4B724CD1A460034AE1A /* CloudFirestoreTutorial */ = {
+			isa = PBXGroup;
+			children = (
+				9267124A24CD2B1F00837645 /* Repositories */,
+				92A0C4C024CD23AA0034AE1A /* ViewModel */,
+				92A0C4BD24CD1F8F0034AE1A /* Views */,
+				92A0C4BA24CD1E820034AE1A /* Models */,
+			);
+			path = CloudFirestoreTutorial;
+			sourceTree = "<group>";
+		};
+		92A0C4BA24CD1E820034AE1A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				92A0C4BB24CD1E9E0034AE1A /* Task.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		92A0C4BD24CD1F8F0034AE1A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92A0C4BE24CD1FA20034AE1A /* TaskListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		92A0C4C024CD23AA0034AE1A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				92A0C4C124CD23CA0034AE1A /* TaskListViewModel.swift */,
+				92A0C4C324CD24F10034AE1A /* TaskCellViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		92D51E4524C9344B000EC1A9 /* FirestoreTutotialView */ = {
@@ -371,6 +426,7 @@
 				9263EDC224B9BC4300934940 /* ListView.swift in Sources */,
 				9263EDA124B9BAF900934940 /* AppDelegate.swift in Sources */,
 				9263EDA624B9BAF900934940 /* TimeApp.xcdatamodeld in Sources */,
+				92A0C4BC24CD1E9E0034AE1A /* Task.swift in Sources */,
 				92D51E4424C92963000EC1A9 /* ViewController.swift in Sources */,
 				9263EDCD24B9C46D00934940 /* OrderListViewModel.swift in Sources */,
 				9263EDBE24B9BC2B00934940 /* AddView.swift in Sources */,
@@ -378,6 +434,7 @@
 				9279BD4324C6837A000C9F09 /* User.swift in Sources */,
 				9263EDFB24BAB6B700934940 /* BarView.swift in Sources */,
 				92D51E4724C9346D000EC1A9 /* TutorialHomeVIew.swift in Sources */,
+				92A0C4C224CD23CA0034AE1A /* TaskListViewModel.swift in Sources */,
 				921F153F24BD19DB001ED296 /* AdditionalView.swift in Sources */,
 				9279BD4B24C7A9EB000C9F09 /* AfterLogInView.swift in Sources */,
 				9263EDA824B9BAF900934940 /* ContentView.swift in Sources */,
@@ -389,6 +446,9 @@
 				9263EDC924B9C10000934940 /* CoreDataManager.swift in Sources */,
 				9263EDA324B9BAF900934940 /* SceneDelegate.swift in Sources */,
 				92A020AA24BC38840010AF03 /* CardView.swift in Sources */,
+				9267124C24CD2B3100837645 /* TaskRepository.swift in Sources */,
+				92A0C4BF24CD1FA20034AE1A /* TaskListView.swift in Sources */,
+				92A0C4C424CD24F10034AE1A /* TaskCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
