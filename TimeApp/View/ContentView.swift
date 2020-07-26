@@ -4,7 +4,10 @@ import SwiftUI
 struct ContentView : View {
     
     var body: some View {
-        ListView()
+        TutorialHomeVIew(reviewedRestaurants: [])
+        
+        //MARK: - 本来ならば、ContentView()とかく
+        //ContentView()
     }
 }
 

@@ -56,12 +56,12 @@ struct ListView: View {
                 
                 
                 .navigationBarItems(
-//                    leading: NavigationLink(destination: AuthenticationView()){
-//                    Image(systemName: "person.crop.circle")
-//                        .resizable()
-//                        .frame(width: 30, height: 30)
-//                        .foregroundColor(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-//                    },
+                    leading: NavigationLink(destination: AuthenticationView()){
+                    Image(systemName: "person.crop.circle")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                        .foregroundColor(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                    },
                     
                     trailing: Button(action: {
                         self.isPresented = true
