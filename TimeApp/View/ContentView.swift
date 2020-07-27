@@ -4,8 +4,7 @@ import SwiftUI
 struct ContentView : View {
     
     var body: some View {
-        TaskListView()
-        
+        ListView()
         //MARK: - 本来ならば、ListView()とかく
         //ListView()
     }
