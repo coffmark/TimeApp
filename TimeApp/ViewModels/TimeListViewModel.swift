@@ -1,5 +1,5 @@
 //
-//  OrderListViewModel.swift
+//  TimeListViewModel.swift
 //  TimeApp
 //
 //  Created by 神村亮佑 on 2020/07/11.
@@ -13,33 +13,20 @@ import Combine
 
 class TimeListViewModel: ObservableObject{
     
-    @Published var times = [TimeViewModel]()
+    @Published var times = [TimeModel]()
     
     init() {
         fetchAllTimes()
     }
     
-    func deleteTime(_ orderVM: TimeViewModel) {
+    func deleteTime(_ orderVM: TimeModel) {
         CoreDataManager.shared.deleteTime(name: orderVM.name)
         fetchAllTimes()
     }
     
     func fetchAllTimes() {
-        self.times = CoreDataManager.shared.getAllTimes().map(TimeViewModel.init)
+        self.times = CoreDataManager.shared.getAllTimes().map(TimeModel.init)
         print(self.times)
-    }
-}
-
-
-class TimeViewModel{
-    var name :String = ""
-    var downtime: Date
-    var uptime: Date
-    
-    init(time: Time) {
-        self.name = time.name!
-        self.downtime = time.downtime!
-        self.uptime = time.uptime!
     }
 }
 
