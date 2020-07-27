@@ -41,7 +41,7 @@
 		5CFD915496B80078A8F64643 /* Pods-TimeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeApp.release.xcconfig"; path = "Target Support Files/Pods-TimeApp/Pods-TimeApp.release.xcconfig"; sourceTree = "<group>"; };
 		921F153E24BD19DB001ED296 /* AdditionalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalView.swift; sourceTree = "<group>"; };
 		922A187124C26AEC00D542B3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		9263ED9D24B9BAF900934940 /* TimeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9263ED9D24B9BAF900934940 /* 朝活.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "朝活.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9263EDA024B9BAF900934940 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9263EDA224B9BAF900934940 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9263EDA524B9BAF900934940 /* TimeApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TimeApp.xcdatamodel; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 		9263ED9E24B9BAF900934940 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9263ED9D24B9BAF900934940 /* TimeApp.app */,
+				9263ED9D24B9BAF900934940 /* 朝活.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -230,9 +230,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9263ED9C24B9BAF900934940 /* TimeApp */ = {
+		9263ED9C24B9BAF900934940 /* 朝活 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9263EDB424B9BAFB00934940 /* Build configuration list for PBXNativeTarget "TimeApp" */;
+			buildConfigurationList = 9263EDB424B9BAFB00934940 /* Build configuration list for PBXNativeTarget "朝活" */;
 			buildPhases = (
 				0AB3C87EE124DF11B542D737 /* [CP] Check Pods Manifest.lock */,
 				9263ED9924B9BAF900934940 /* Sources */,
@@ -245,12 +245,12 @@
 			);
 			dependencies = (
 			);
-			name = TimeApp;
+			name = "朝活";
 			packageProductDependencies = (
 				9263EDB824B9BBBD00934940 /* BottomBar-SwiftUI */,
 			);
 			productName = TimeApp;
-			productReference = 9263ED9D24B9BAF900934940 /* TimeApp.app */;
+			productReference = 9263ED9D24B9BAF900934940 /* 朝活.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -284,7 +284,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9263ED9C24B9BAF900934940 /* TimeApp */,
+				9263ED9C24B9BAF900934940 /* 朝活 */,
 			);
 		};
 /* End PBXProject section */
@@ -527,7 +527,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TimeApp/TimeApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.3;
+				CURRENT_PROJECT_VERSION = 1.0.4;
 				DEVELOPMENT_ASSET_PATHS = "\"TimeApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 4L3H8AS5LU;
 				ENABLE_PREVIEWS = YES;
@@ -552,7 +552,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TimeApp/TimeApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.3;
+				CURRENT_PROJECT_VERSION = 1.0.4;
 				DEVELOPMENT_ASSET_PATHS = "\"TimeApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 4L3H8AS5LU;
 				ENABLE_PREVIEWS = YES;
@@ -582,7 +582,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9263EDB424B9BAFB00934940 /* Build configuration list for PBXNativeTarget "TimeApp" */ = {
+		9263EDB424B9BAFB00934940 /* Build configuration list for PBXNativeTarget "朝活" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9263EDB524B9BAFB00934940 /* Debug */,
