@@ -6,9 +6,6 @@
 //  Copyright © 2020 神村亮佑. All rights reserved.
 //
 import Foundation
-import SwiftUI
-import CoreData
-import Combine
 
 
 class TimeModel{
