@@ -35,7 +35,7 @@ struct BarView: View {
                     .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                 Capsule()
                     .frame(width: barScore(val: t), height: 30)
-                    .foregroundColor(Color(#colorLiteral(red: 0.6229396462, green: 0.5232685804, blue: 0.9278500676, alpha: 1)))
+                    .foregroundColor(Color.orange)
             }
         }
     }

@@ -40,7 +40,7 @@ struct ListView: View {
                 ForEach(self.timeListVM.times, id: \.name){ time in
                     CardView(name: time.name, sleepTime: time.downtime, getupTime: time.uptime)
                 }.onDelete(perform: delete)
-                    .listRowBackground(Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1))
+                    .listRowBackground(Color(#colorLiteral(red: 0.2186107039, green: 0.2173176706, blue: 0.2196089029, alpha: 1))
                         .clipped()
                         .cornerRadius(10)
                         .padding([.vertical], 5))
@@ -63,7 +63,7 @@ struct ListView: View {
                     Image(systemName: "person.crop.circle")
                         .resizable()
                         .frame(width: 30, height: 30)
-                        .foregroundColor(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                        .foregroundColor(Color.orange)
                     },
                     
                     trailing: Button(action: {
@@ -73,7 +73,7 @@ struct ListView: View {
                             
                             .resizable()
                             .frame(width: 30, height: 30)
-                            .foregroundColor(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                            .foregroundColor(Color.orange)
                     }))
             
         }.navigationViewStyle(StackNavigationViewStyle())

@@ -50,22 +50,26 @@ struct CardView: View {
     
     
     var body: some View {
-        VStack{
-            HStack (alignment: .center) {
-                Text("😁")
-                    .font(.largeTitle)
-                    .background(Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
-                    .cornerRadius(30)
+        VStack(alignment: .leading, spacing: 10){
+            VStack(alignment: .leading){
                 
                 Text("\(sleepTime, formatter: self.dateFormat)")
+                    .font(.title)
+                    .fontWeight(.medium)
             }
+            
             
             
             HStack{
                 Text("\(String(format: "%.1f", getupTime.timeIntervalSince(sleepTime) / 3600))h")
+                    .font(.title)
+                    .fontWeight(.heavy)
                 BarView(t: CGFloat(getupTime.timeIntervalSince(sleepTime) / 3600))
             }
-             Text(name)
+            VStack(alignment: .center){
+                Text(name)
+            }
+            
         }
         
         

@@ -41,7 +41,7 @@ struct AdditionalView: View {
     var inputform: some View{
         ZStack{
             
-            Color(#colorLiteral(red: 0.6229396462, green: 0.5232685804, blue: 0.9278500676, alpha: 1))
+            Color.orange
                 .edgesIgnoringSafeArea(.all)
             
             VStack{
@@ -59,12 +59,14 @@ struct AdditionalView: View {
                         Text("Sleep Time")
                             .font(.callout)
                             .fontWeight(.bold)
+                            .foregroundColor(Color(#colorLiteral(red: 0.2940887213, green: 0.2941361666, blue: 0.2940783501, alpha: 1)))
                         Image("sleep")
                             .resizable()
                             .frame(width: 100, height: 100)
                     }
                     DatePicker("", selection: self.$addTimeVM.downtime)
                         .labelsHidden()
+                    .foregroundColor(Color(#colorLiteral(red: 0.2940887213, green: 0.2941361666, blue: 0.2940783501, alpha: 1)))
                         .frame(width: 300, height: 80, alignment: .center)
                         .clipped()
                         .padding(.vertical)
@@ -74,7 +76,9 @@ struct AdditionalView: View {
                         Text("Get up Time")
                             .font(.callout)
                             .fontWeight(.bold)
+                        .foregroundColor(Color(#colorLiteral(red: 0.2940887213, green: 0.2941361666, blue: 0.2940783501, alpha: 1)))
                             .padding()
+                        
                         Image("rise")
                             .resizable()
                             .frame(width: 100, height: 100)
@@ -83,6 +87,7 @@ struct AdditionalView: View {
                     DatePicker("", selection: self.$addTimeVM.uptime)
                         .labelsHidden()
                         .frame(width: 300, height: 80, alignment: .center)
+                    .foregroundColor(Color(#colorLiteral(red: 0.2940887213, green: 0.2941361666, blue: 0.2940783501, alpha: 1)))
                         .clipped()
                         .padding(.vertical)
                 }
@@ -149,7 +154,7 @@ struct AdditionalView: View {
     
     var body: some View {
         ZStack{
-            Color(#colorLiteral(red: 0.7392455935, green: 0.7496188283, blue: 0.7361342311, alpha: 1)).edgesIgnoringSafeArea(.all)
+            Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)).edgesIgnoringSafeArea(.all)
             inputform
         }
     }
