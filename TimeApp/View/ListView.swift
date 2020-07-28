@@ -35,6 +35,7 @@ struct ListView: View {
         
         NavigationView{
             
+            
             List{
                 ForEach(self.timeListVM.times, id: \.name){ time in
                     CardView(name: time.name, sleepTime: time.downtime, getupTime: time.uptime)
