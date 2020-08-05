@@ -31,7 +31,7 @@ struct ListView: View {
     
     
     
-    var body: some View{
+    var list: some View{
         
         NavigationView{
             
@@ -77,6 +77,13 @@ struct ListView: View {
                     }))
             
         }.navigationViewStyle(StackNavigationViewStyle())
+    }
+    
+    var body: some View{
+        ZStack{
+            Color.black.edgesIgnoringSafeArea(.all)
+            list
+        }
     }
 }
 
