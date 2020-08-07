@@ -40,12 +40,13 @@ struct ListView: View {
                 ForEach(self.timeListVM.times, id: \.name){ time in
                     CardView(name: time.name, sleepTime: time.downtime, getupTime: time.uptime)
                 }.onDelete(perform: delete)
-                    .listRowBackground(Color(#colorLiteral(red: 0.2186107039, green: 0.2173176706, blue: 0.2196089029, alpha: 1))
+                    .listRowBackground(Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1))
                         .clipped()
                         .cornerRadius(10)
                         .padding([.vertical], 5))
                 
-            }.background(Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
+            }
+            .background(Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
                 
                 
                 .sheet(isPresented: $isPresented, onDismiss: {
@@ -59,12 +60,12 @@ struct ListView: View {
                 
                 
                 .navigationBarItems(
-                    leading: NavigationLink(destination: AuthenticationView()){
-                    Image(systemName: "person.crop.circle")
-                        .resizable()
-                        .frame(width: 30, height: 30)
-                        .foregroundColor(Color.orange)
-                    },
+//                    leading: NavigationLink(destination: AuthenticationView()){
+//                    Image(systemName: "person.crop.circle")
+//                        .resizable()
+//                        .frame(width: 30, height: 30)
+//                        .foregroundColor(Color.orange)
+//                    },
                     
                     trailing: Button(action: {
                         self.isPresented = true

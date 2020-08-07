@@ -22,21 +22,10 @@ struct OneDay: Identifiable{
 
 
 struct AdditionalView: View {
-    
-    
     //Sheetを表示するかどうか
     @Binding var isPresented: Bool
-    
     //ViewModelの呼び出し
     @State var addTimeVM = AddTimeViewModel()
-    
-    //OneDaysのディクショナリー
-//    @State var OneDays: [OneDay]
-    
-    
-    
-
-    
     
     var inputform: some View{
         ZStack{
@@ -53,7 +42,7 @@ struct AdditionalView: View {
                     TextField("Enter name", text: self.$addTimeVM.name)
                     
                 }.padding([.leading], 100)
-        
+                
                 VStack {
                     HStack {
                         Text("Sleep Time")
@@ -66,7 +55,7 @@ struct AdditionalView: View {
                     }
                     DatePicker("", selection: self.$addTimeVM.downtime)
                         .labelsHidden()
-                    .foregroundColor(Color(#colorLiteral(red: 0.2940887213, green: 0.2941361666, blue: 0.2940783501, alpha: 1)))
+                        .foregroundColor(Color(#colorLiteral(red: 0.2940887213, green: 0.2941361666, blue: 0.2940783501, alpha: 1)))
                         .frame(width: 300, height: 80, alignment: .center)
                         .clipped()
                         .padding(.vertical)
@@ -76,7 +65,7 @@ struct AdditionalView: View {
                         Text("Get up Time")
                             .font(.callout)
                             .fontWeight(.bold)
-                        .foregroundColor(Color(#colorLiteral(red: 0.2940887213, green: 0.2941361666, blue: 0.2940783501, alpha: 1)))
+                            .foregroundColor(Color(#colorLiteral(red: 0.2940887213, green: 0.2941361666, blue: 0.2940783501, alpha: 1)))
                             .padding()
                         
                         Image("rise")
@@ -87,34 +76,13 @@ struct AdditionalView: View {
                     DatePicker("", selection: self.$addTimeVM.uptime)
                         .labelsHidden()
                         .frame(width: 300, height: 80, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.2940887213, green: 0.2941361666, blue: 0.2940783501, alpha: 1)))
+                        .foregroundColor(Color(#colorLiteral(red: 0.2940887213, green: 0.2941361666, blue: 0.2940783501, alpha: 1)))
                         .clipped()
                         .padding(.vertical)
                 }
                 Button(action: {
                     self.addTimeVM.saveTime()
                     self.isPresented = false
-                    
-                    
-                    
-//                    let recodedOneDay = [
-//                        "name": self.$addTimeVM.name,
-//                    ] as [String : Any]
-//                    //MARK: - as [String : Any]とは？？
-//
-//                    let docRef = Firestore.firestore().document("oneday/\(UUID().uuidString)")
-//                    print("Setting OneDay Data")
-//
-//
-//
-//
-//                    docRef.setData(recodedOneDay){(error) in
-//                        if let error = error{
-//                            print("error = \(error)")
-//                        }else{
-//                            print("data uploaded successfully")
-//                        }
-//                    }
                 }) {
                     Text("入力")
                         .font(.title)
@@ -125,36 +93,12 @@ struct AdditionalView: View {
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .padding(10)
                 }}
-//     .onAppear(){
-//                Firestore.firestore().collection("onedays").addSnapshotListener{ querySnapshot, error in
-//                    guard let documents = querySnapshot?.documents else{
-//                        print("Error fetching documents: \(error!)")
-//                        return
-//                    }
-//
-//
-//                    let names = documents.map{ $0["name"]! }
-//
-//                    print(names)
-//
-//                    self.OneDays.removeAll()
-//
-//
-//                    for i in 0..<names.count{
-//                        self.OneDays.append(OneDay(
-//                            name: names[i] as? String ?? "Failed to get name"
-//                            )
-//                        )
-//                    }
-//
-//                }
-//            }
         }.cornerRadius(100)
     }
     
     var body: some View {
         ZStack{
-            Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)).edgesIgnoringSafeArea(.all)
+            Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.7996842894)).edgesIgnoringSafeArea(.all)
             inputform
         }
     }
