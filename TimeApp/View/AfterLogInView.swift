@@ -21,7 +21,7 @@ struct AfterLogInView: View {
                     .foregroundColor(Color.black.opacity(0.7))
                 
                 
-                NavigationLink(destination: TutorialHomeVIew()){
+                NavigationLink(destination: TutorialHomeVIew(reviewedRestaurants: [])){
                     Text("Go to the next page.")
                 }
                 

@@ -5,6 +5,8 @@ struct ContentView : View {
     
     var body: some View {
         ListView()
+        //MARK: - 本来ならば、ListView()とかく
+        //ListView()
     }
 }
 
